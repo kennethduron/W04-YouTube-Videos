@@ -1,12 +1,16 @@
 from Video import Video
 from Comment import Comment
 
-# Create 3 Video objects
+# -----------------------------
+# Create Video objects
+# -----------------------------
 video1 = Video("Python Basics", "Alice", 300)
 video2 = Video("OOP in Python", "Bob", 450)
 video3 = Video("Advanced Python", "Charlie", 600)
 
-# Create comments for each video
+# -----------------------------
+# Create Comment objects
+# -----------------------------
 comments_video1 = [
     Comment("John", "Great explanation!"),
     Comment("Emma", "Very helpful, thanks!"),
@@ -25,7 +29,9 @@ comments_video3 = [
     Comment("Ethan", "Learned a lot, thanks!")
 ]
 
+# -----------------------------
 # Add comments to videos
+# -----------------------------
 for comment in comments_video1:
     video1.add_comment(comment)
 
@@ -35,9 +41,13 @@ for comment in comments_video2:
 for comment in comments_video3:
     video3.add_comment(comment)
 
+# -----------------------------
 # Store videos in a list
+# -----------------------------
 video_list = [video1, video2, video3]
 
-# Display information for each video
+# -----------------------------
+# Display all video info
+# -----------------------------
 for video in video_list:
     video.display_video_info()
